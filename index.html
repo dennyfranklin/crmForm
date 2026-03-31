@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form</title>
+<link rel="stylesheet" href="styles.css">
+	
+<script
+src='//in.fw-cdn.com/31855392/970131.js'
+chat='false'>
+</script>
+
+<!--   <script> function createFcn(nm){(window.freshsales)[nm]=function(){(window.freshsales).push([nm].concat(Array.prototype.slice.call(arguments,0)))}; } (function(url,appToken,formCapture){window.freshsales=window.freshsales||[];if(window.freshsales.length==0){list='init identify trackPageView trackEvent set'.split(' ');for(var i=0;i<list.length;i++){var nm=list[i];createFcn(nm);}var t=document.createElement('script');t.async=1;t.src='//d952cmcgwqsjf.cloudfront.net/assets/analytics.js';var ft=document.getElementsByTagName('script')[0];ft.parentNode.insertBefore(t,ft);freshsales.init("https://dennydavid1-703975880811311817.myfreshworks.com/crm/sales","a7417902e37bd7efdef056b4857d16a6f6d9ef195e4924ed993bb24cbca072b3",false);}})();</script>
+ -->
+
+
+</head>
+<body>
+
+   <div class="form-container">
+        <form id="Testing_form" >
+            <h2>Contact Us</h2>
+            
+            <label for="firstName">First Name</label>
+            <input id="first_name_2" type="text" name="firstname"placeholder="Enter your first name">
+
+            <label for="email">Email Address <span class="required">*</span></label>
+            <input id="email_2" type="email" name="email" placeholder="Enter your email" required>
+
+            <label for="phoneNumber">Phone Number</label>
+            <input id="mobile_2" type="tel" name="phone"  placeholder="Enter your phone number">
+		
+<!--             <label for="company_name">Company Name:</label><br>
+            <input id="company_name_2" type="text"  name="Company name" required><br><br>
+ -->
+<!-- 	<label type="hidden" for="exampleInput">Enter Text:</label>
+        <input type="hidden" id="exampleInput" name="exampleInput" value="test">
+<!--             <button type="submit">Submit</button> -->
+<!-- 		<button onclick="Activity(event)" id="btn" type="button">Click</button> -->
+
+            
+        
+               <button type="submit" data-bind="click: submitForm, addIsProcessingClass: isProcessing, disabled: isProcessing" class="btn cv-send">Subscribe</button>
+<!-- 	      <input type="submit" value="submit" > 
+<!--               <button onclick="magic_btn(event)">Magic Button</button> -->
+
+            
+        </form>
+        <p id="thankYouMessage" style="display: none;">Thanks for submitting the form!</p>
+    </div>
+
+	<!-- <script>
+
+		function identify_call(){
+			console.log("Hello");
+			var new_contact = {
+	"First name": document.getElementById("first_name_2").value, //Replace with first name of the user
+	"Email": document.getElementById("email_2").value, //Replace with email of the user
+	"Mobile": document.getElementById("mobile_2").value, //Replace with a custom field
+	"company": {
+                    "Name": document.getElementById("company_name_2").value
+        }
+};
+var identifier = document.getElementById("email_2").value;
+fwcrm.identify(identifier, new_contact);
+		}
+	</script> -->
+
+
+<!--     <form id="form_2">
+        <label for="first_name">First Name:</label><br>
+        <input type="text" id="first_name_2" name="First name" required><br>
+        
+        <label for="last_name">Last Name:</label><br>
+        <input type="text" id="last_name_2" name="Last name" required><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email_2" name="Email" required><br>
+        
+        <label for="mobile">Mobile:</label><br>
+        <input type="tel" id="mobile_2" name="Mobile" required><br>
+        
+        <label for="company_name">Company Name:</label><br>
+        <input type="text" id="company_name_2" name="Company name" required><br><br>
+        
+<input type="submit" onclick="identify_call()">
+
+    </form> -->
+
+	
+<!--     <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            document.getElementById('contactForm').style.display = 'none';
+            document.getElementById('thankYouMessage').style.display = 'block';
+        }
+    </script> -->
+    
+</body>
+</html>
